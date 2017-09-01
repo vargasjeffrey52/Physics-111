@@ -1,0 +1,23 @@
+So currently the project project works as follows (if i understand it correctly):
+we specify frequencies using 555 timers and capacitors and resistors
+we then connect each LED's to the output of these 555 timers. 
+Finally we read out the frequencies thorugh a photo diode and dislplay
+using labview...
+
+I suggest that instead instead of keeping the frequency fixed at a specified
+value we allow it to vary at a specified range of frequncies.
+we might be able to do this using a photo resistor.
+(photo resistor: the resistance varies with light intensity).
+
+For example using the 555 timer frequnecy equation we can specify the following
+
+RED -  1kHz - 1.9kHz
+Green -  2kHz - 2.9kHz
+Blue - 3Khz - 3.9kHz
+
+we would control the range of frequencies for each color by sending the 555 output
+thorugh a band pass filter before sending it out to the LED.
+
+Finally, we Will No Longer analyze a sample color with the photodiode. Instead we
+would used the photo resistor and the other canister I have. we will then bounce light from a
+colored object direct it towards the photo resistor.
